@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Admin Page</title>
+    <script src="Dependent Scripts\Angular\angular.js"></script>
+    <script src="Dependent Scripts\Angular\AdminUpload.js"></script>
+</head>
+<body ng-app="application" ng-controller="AdminUploadController">
+    Name : <input type="text" ng-model="UploadData.name"/><br/>
+    Type : <select ng-model="UploadData.type">
+        <option value="frontend">Front End</option>
+        <option value="programminglanguage">Programming Language</option>
+        <option value="cloudtechnology">Cloud Technology</option>
+        <option value="database">Data Base</option>
+        <option value="tool">Tool</option>
+        <option value="versioncontrol">Version Control</option>
+            </select><br/>
+    Image: <input type="file" id="image"><br/>
+    Enabled : <input type="radio" ng-model="UploadData.enabled" value="true">Yes
+              <input type="radio" ng-model="UploadData.enabled" value="false">No<br/>
+              <input type="button" id="insert" ng-click="submit()" value="Insert"/>
+</body>
+
+</html>

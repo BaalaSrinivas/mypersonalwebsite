@@ -5,14 +5,21 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--scripts-->
-	<link rel="stylesheet" href="Dependent Scripts/bootstrap.css">
-	<script src="Dependent Scripts/jquery.min.js"></script>
-	<script src="Dependent Scripts/bootstrap.min.js"></script>
+	<!--JQuery-->
+	<script src="Dependent Scripts/Jquery/jquery.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="Dependent Scripts/Bootstrap/bootstrap.css">
+	<script src="Dependent Scripts/Bootstrap/bootstrap.min.js"></script>
+	<!--Angular-->
+	<script src="Dependent Scripts/Angular/angular.js"></script>
+	<script src="Dependent Scripts/Angular/controller.js"></script>
 
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative;">
+
+
+<body class="container-fluid" ng-app="application" data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative;">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -51,25 +58,68 @@
 			</div>
 		</div>
 	</div>
-	<div id="home" style="height: 100%;padding-top:50px;">
-		Home Div
+	<div id="home" style="height: 100%;padding-top:50px;background-image: url('Images/backgroundimage13.jpg');">
+		<!-- <div class="col-md-2" ng-repeat="data in ImageObjectList">
+			<img ng-src="data:image/png;base64,{{data.Image}}" style="width:100px;float:left;animation: rotateAnimation 10s;" />
+		</div> -->
 	</div>
-	<div id="skills" style="height: 100%;padding-top:50px;">
-		Front End
+	<div ng-controller="SkillsController" id="skills" style="height: 100%;padding-top:50px;">
 		<div class="row" style="vertical-align: middle;">
-			<div class="col-md-2"><img src="/Images/Skills Logo/jquery.png" style="width:200px;float:left;position:relative;animation: rotateAnimation 5s;animation-delay:0s;"
-				/></div>
-			<div class="col-md-2"><img src="/Images/Skills Logo/angularjs.png" style="width:200px;float:left;position:relative;animation: rotateAnimation 5s;animation-delay:0.5s;"
-				/></div>
-			<div class="col-md-2"><img src="/Images/Skills Logo/javascript.png" style="width:200px;float:left;position:relative;animation: rotateAnimation 5s;animation-delay:1s;"
-				/></div>
+			<div class="panel-heading">Front End</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'frontend'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
 		</div>
+
+		<div class="row" style="vertical-align: middle;">
+			<div class="panel-heading">Programming Language</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'programminglanguage'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
+		</div>
+
+		<div class="row" style="vertical-align: middle;">
+			<div class="panel-heading">Cloud Technologies</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'cloudtechnology'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
+		</div>
+
+		<div class="row" style="vertical-align: middle;">
+			<div class="panel-heading">Tools</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'tool'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
+		</div>
+
+		<div class="row" style="vertical-align: middle;">
+			<div class="panel-heading">Databases</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'database'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
+		</div>
+
+		<div class="row" style="vertical-align: middle;">
+			<div class="panel-heading">Version Control</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'versioncontrol'" class="col-md-2">
+				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
+				/>
+			</div>
+		</div>
+
 	</div>
+	<div class="row"></div>
 	<div id="experience" style="height: 100%;padding-top:50px;">
 		Experience div
 	</div>
 	<div id="contact" style="height: 100%;padding-top:50px;">
-		Contact div
+		<input type="file" id="imageTest" />
+		<button id="submit" value="Submit" name="submit" type="button" />
 	</div>
 </body>
 
@@ -83,5 +133,29 @@
 		}
 	}
 </style>
+
+<script>
+	$("#submit").click(function () {
+		var formdata = new FormData();
+		formdata.append("image", $("#imageTest")[0].files[0]);
+		formdata.append("name", "BaalaImageTest");
+		formdata.append("enabled", true);
+		formdata.append("imageUrl", "");
+		var obj = {
+			name: "TestName",
+			image: $("#imageTest")[0].files[0],
+			enabled: "true",
+			id: "test"
+		};
+		$.ajax({
+			url: "http://localhost:59917/siteapi/PhotoGallery/PutImage",
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formdata
+		});
+	});
+
+</script>
 
 </html>
