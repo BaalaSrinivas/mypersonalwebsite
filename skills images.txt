@@ -1,0 +1,99 @@
+<div class="row">
+			<div class="h4">Front End</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'frontend'" class="col-md-2 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+				<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+				/>
+			</div>
+		</div>
+
+		<div class="row" style="padding-bottom:15px">
+			<div class="h4">Programming Languages</div>
+			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'programminglanguage'" class="col-md-3 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+				<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+				/>
+			</div>
+		</div>
+
+		<div class="row">
+			<div style="float:left;width:50%;padding-bottom:15px">
+				<div class="h4">Cloud Technologies</div>
+				<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'cloudtechnology'" class="col-md-6 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+					<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+					/>
+				</div>
+			</div>
+
+
+			<div style="float:left;width:50%;padding-bottom:15px">
+				<div class="h4">Tools</div>
+				<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'tool'" class="col-md-6 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+					<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div style="float:left;width:50%">
+				<div class="h4">Databases</div>
+				<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'database'" class="col-md-6 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+					<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+					/>
+				</div>
+			</div>
+
+			<div style="float:left;width:50%">
+				<div class="h4">Version Control</div>
+				<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'versioncontrol'" class="col-md-6 col-sm-12" style="display: inline-block;vertical-align: middle;float: none;">
+					<img style="width:125px;animation: rotateAnimation 5s;animation-delay:0s;" ng-src="data:image/png;base64,{{image.Image}}"
+					/>
+				</div>
+			</div>
+		</div>
+
+
+<script>
+	$("#submit").click(function () {
+		var formdata = new FormData();
+		formdata.append("image", $("#imageTest")[0].files[0]);
+		formdata.append("name", "BaalaImageTest");
+		formdata.append("enabled", true);
+		formdata.append("imageUrl", "");
+		var obj = {
+			name: "TestName",
+			image: $("#imageTest")[0].files[0],
+			enabled: "true",
+			id: "test"
+		};
+		$.ajax({
+			url: "http://localhost:59917/siteapi/PhotoGallery/PutImage",
+			type: "POST",
+			contentType: false,
+			processData: false,
+			data: formdata
+		});
+	});
+
+</script>
+
+
+<input type="file" id="imageTest" />
+		<button id="submit" value="Submit" name="submit" type="button" />
+		
+		
+		
+		<div class="col-sm-3" style="float:left;width:30%;height:100%;">
+			<img src="baalaB.png" style="width:300px;transform: rotateY(20deg);" />
+		</div>
+		<div class="col-sm-6" style="float:left;padding-top:50px;padding-left:50px;width:70%;height:100%">
+			<h4 class="listProfile">Summary</h4>
+			<ul>
+				<li class="listProfile">2+ years of work experience as a project engineer implementing multi-tier software and web applications</li>
+				<li class="listProfile">Played critical roles in development, unit testing and deployment of various applications</li>
+				<li class="listProfile">Good exposure to front end scripting languages like JQuery, JavaScript, Angular JS</li>
+				<li class="listProfile">Have exposure to cloud technologies like IBM Bluemix, have created an application based on cloud environment and have
+					won prizes</li>
+				<li class="listProfile">Experience in creating android applications</li>
+				<li class="listProfile">Experience in creating REST service based applications</li>
+			</ul>
+		</div>

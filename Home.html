@@ -13,13 +13,13 @@
 	<!--Angular-->
 	<script src="Dependent Scripts/Angular/angular.js"></script>
 	<script src="Dependent Scripts/Angular/controller.js"></script>
-
-
+	<!--Social Icons-->
+	<link rel="stylesheet" href="Dependent Scripts/Social Icons/font-awesome.min.css">
 </head>
 
 
 
-<body class="container-fluid" ng-app="application" data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative;">
+<body class="" ng-app="application" data-spy="scroll" data-target=".navbar" data-offset="100" style="position:relative;overflow-x:hidden">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -27,7 +27,7 @@
         			<span class="icon-bar"></span>
         			<span class="icon-bar"></span>                        
       		</button>
-			<a class="navbar-brand" href="#">Baala Srinivas</a>
+			<a class="navbar-brand" href="#baala">Baala Srinivas</a>
 		</div>
 		<div class="navbar-collapse collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
@@ -38,8 +38,11 @@
 			</ul>
 		</div>
 	</nav>
-	<div style="height:50%">
-		<div id="MyImageSlide" class="carousel slide" data-ride="carousel">
+	<div id="baala" style="background-image: url('Images/backgroundimage3.jpg');">
+
+	</div>
+	<div id="home" style="background-image: url('Images/backgroundimage13.jpg');">
+		<div id="MyImageSlide" class="carousel slide" data-ride="carousel" style="height:60%">
 			<ol class="carousel-indicators">
 				<li data-target="#MyImageSlide" data-slide-to="0" class="active"></li>
 				<li data-target="#MyImageSlide" data-slide-to="1"></li>
@@ -57,69 +60,397 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-10 col-xs-8">
+				<h5 class="">
+					Hey There<br/>
+				</h5>
+				<h5 class="">
+					This is Baala Srinivas<br/>
+				</h5>
+				<h5 class="typingAnimation">
+					I am a full stack web developer based in Bangalore, India. I love creating websites, clicking photographs and playing badmition<br/>
+				</h5>
+			</div>
+			<div class="col-md-2 col-xs-4">
+				<div class="h4 text-center">Resume</div>
+				<div class="row">
+					<div><a href=""><img class="col-md-6 col-xs-6" id="pdfResume" src="Images/Resume Icons/pdfsmall.png" /></a></div>
+					<div><a href=""><img class="col-md-6 col-xs-6" id="wordResume" src="Images/Resume Icons/wordsmall.png" /></a></div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div id="home" style="height: 100%;padding-top:50px;background-image: url('Images/backgroundimage13.jpg');">
-		<!-- <div class="col-md-2" ng-repeat="data in ImageObjectList">
-			<img ng-src="data:image/png;base64,{{data.Image}}" style="width:100px;float:left;animation: rotateAnimation 10s;" />
-		</div> -->
-	</div>
-	<div ng-controller="SkillsController" id="skills" style="height: 100%;padding-top:50px;">
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Front End</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'frontend'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+	<div ng-controller="SkillsController" id="skills" style="padding-top:50px;background-image: url('Images/backgroundimage16.jpg');background-size:inherit;">
+		<div class="container">
+			<div class="col-md-12 h4">Languages, Scripts &amp; Frameworks</div>
+			<div class="col-md-6">
+				<div class="col-md-6">C# Programming</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:90%">
+							9/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Programming Language</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'programminglanguage'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+			<div class="col-md-6">
+				<div class="col-md-6">JQuery</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:90%">
+							9/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Cloud Technologies</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'cloudtechnology'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+			<div class="col-md-6">
+				<div class="col-md-6">ASP.NET</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Tools</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'tool'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+			<div class="col-md-6">
+				<div class="col-md-6">JSON</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:100%">
+							10/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Databases</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'database'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+			<div class="col-md-6">
+				<div class="col-md-6">MVC Framework</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="row" style="vertical-align: middle;">
-			<div class="panel-heading">Version Control</div>
-			<div ng-repeat="image in ImageObjectList" ng-if="image.Type == 'versioncontrol'" class="col-md-2">
-				<img ng-src="data:image/png;base64,{{image.Image}}" style="width:100px;float:left;animation: rotateAnimation 5s;animation-delay:0s;"
-				/>
+			<div class="col-md-6">
+				<div class="col-md-6">Angular JS</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+			<div class="col-md-6">
+				<div class="col-md-6">ADO.NET</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">JavaScript</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">SQL Server</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Ajax</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">My Sql</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Bootstrap</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:60%">
+							6/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Andriod</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">PHP</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:50%">
+							5/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Windows Application</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Entitiy Framework</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">HTML &amp; CSS</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Web API</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="col-md-12 h4">Cloud Services</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Amazon Web Services</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:60%">
+							6/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">IBM Bluemix</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Amazon Alexa Toolkit</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:60%">
+							6/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">IBM Cloudant &amp; Watson Analytics</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 h4">Tools</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Visual Studio</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:90%">
+							9/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">SQL Server Management Studio</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Team Foundation Server</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:90%">
+							9/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">GIT</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Internet Information Server (IIS)</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:70%">
+							7/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">WAMP Server</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:80%">
+							8/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Visual Studio Code</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:60%">
+							6/10
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="col-md-6">Andriod Studio</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width:60%">
+							6/10
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 	<div class="row"></div>
-	<div id="experience" style="height: 100%;padding-top:50px;">
-		Experience div
+	<div id="experience" style="padding-top:50px;">
+		<div class="col-md-2"></div>
+		<div class="row col-md-8">
+			<div class="col-md-3">
+				<div class="col-md-12 text-center number">6</div>
+				<div class="col-md-12 text-center">Projects</div>
+				<div class="col-md-12 progressBar"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="col-md-12 text-center number">28</div>
+				<div class="col-md-12 text-center">Months</div>
+				<div class="col-md-12 progressBar"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="col-md-12 text-center number">15</div>
+				<div class="col-md-12 text-center">Technologies</div>
+				<div class="col-md-12 progressBar"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="col-md-12 text-center number">2</div>
+				<div class="col-md-12 text-center">Clients</div>
+				<div class="col-md-12 progressBar"></div>
+			</div>
+		</div>
+
+		<div class="row" style="padding-left:100px">
+			<div class="col-md-12 h4 text-center">Projects</div>
+			<div class="row">
+				<div class="col-md-4">
+					<strong class="col-md-12 text-center">ArcProspectus</strong>
+					<div class="col-md-12 text-center">May 2016 - Till Date</div>
+				</div>
+				<div class="col-md-8">
+					<strong class="col-md-12">Description</strong>
+					<div class="col-md-9 text-justify gap">Arc Prospectus is a powerful content management tool. Arc prospectus creates prospectus and summary documents for the
+						funds and shares.</div>
+					<strong class="col-md-12">Technologies</strong>
+					<div class="col-md-9 gap">
+						<span class="label label-default">ASP.NET</span>
+						<span class="label label-default">ADO.NET</span>
+						<span class="label label-default">JavaScript</span>
+						<span class="label label-default">SQL Server</span>
+						<span class="label label-default">Telerik Control</span>
+					</div>
+					<strong class="col-md-12">Responsibilities</strong>
+					<div class="col-md-9">Played an important role as a part of coding and development </div>
+					<div class="col-md-9">Played a major role in maintenance and enhancement of the project </div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div id="contact" style="height: 100%;padding-top:50px;">
-		<input type="file" id="imageTest" />
-		<button id="submit" value="Submit" name="submit" type="button" />
+	<div id="contact" style="height: 100%;padding-top:50px;background-image:url('images/backgroundimage22.jpg');background-size:100%">
+		<div class="h2 text-center">Contact</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-10 progressBar"></div>
+		<div class="col-md-1"></div>
+
+		<div class="row">
+
+		</div>
 	</div>
 </body>
 
@@ -132,30 +463,59 @@
 			transform: rotateY(360deg);
 		}
 	}
+
+	.listProfile {
+		color: aliceblue;
+		font-size: 24px;
+	}
+
+	.typingAnimation {
+		overflow: hidden;
+		/* Ensures the content is not revealed until the animation */
+		border-right: .15em solid black;
+		/* The typwriter cursor */
+		white-space: nowrap;
+		/* Keeps the content on a single line */
+		margin: 0 auto;
+		/* Gives that scrolling effect as the typing happens */
+		letter-spacing: .15em;
+		/* Adjust as needed */
+		animation: typing 5s steps(50, end),
+		blink-caret .75s step-end infinite;
+	}
+	/* The typing effect */
+
+	@keyframes typing {
+		from {
+			width: 0
+		}
+		to {
+			width: 100%
+		}
+	}
+
+	.number {
+		font-size: 32px;
+		color: black;
+		padding-bottom: 0px;
+	}
+
+	.progressBar {
+		position: relative;
+		height: 5px;
+		background: #221F13;
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.gap {
+		padding-bottom: 15px;
+	}
+
+	#skills {
+		color: white;
+	}
 </style>
-
-<script>
-	$("#submit").click(function () {
-		var formdata = new FormData();
-		formdata.append("image", $("#imageTest")[0].files[0]);
-		formdata.append("name", "BaalaImageTest");
-		formdata.append("enabled", true);
-		formdata.append("imageUrl", "");
-		var obj = {
-			name: "TestName",
-			image: $("#imageTest")[0].files[0],
-			enabled: "true",
-			id: "test"
-		};
-		$.ajax({
-			url: "http://localhost:59917/siteapi/PhotoGallery/PutImage",
-			type: "POST",
-			contentType: false,
-			processData: false,
-			data: formdata
-		});
-	});
-
-</script>
 
 </html>
