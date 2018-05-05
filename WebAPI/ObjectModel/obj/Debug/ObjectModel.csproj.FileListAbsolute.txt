@@ -1,5 +1,0 @@
-F:\My Personal Website\WebAPI\ObjectModel\bin\Debug\ObjectModel.dll
-F:\My Personal Website\WebAPI\ObjectModel\bin\Debug\ObjectModel.pdb
-F:\My Personal Website\WebAPI\ObjectModel\obj\Debug\ObjectModel.dll
-F:\My Personal Website\WebAPI\ObjectModel\obj\Debug\ObjectModel.pdb
-F:\My Personal Website\WebAPI\ObjectModel\obj\Debug\ObjectModel.csprojResolveAssemblyReference.cache

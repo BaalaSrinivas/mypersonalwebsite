@@ -1,8 +1,0 @@
-F:\My Personal Website\WebAPI\DataAccessLayer\bin\Debug\DataAccessLayer.dll
-F:\My Personal Website\WebAPI\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-F:\My Personal Website\WebAPI\DataAccessLayer\bin\Debug\MySql.Data.dll
-F:\My Personal Website\WebAPI\DataAccessLayer\bin\Debug\ObjectModel.dll
-F:\My Personal Website\WebAPI\DataAccessLayer\bin\Debug\ObjectModel.pdb
-F:\My Personal Website\WebAPI\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
-F:\My Personal Website\WebAPI\DataAccessLayer\obj\Debug\DataAccessLayer.dll
-F:\My Personal Website\WebAPI\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

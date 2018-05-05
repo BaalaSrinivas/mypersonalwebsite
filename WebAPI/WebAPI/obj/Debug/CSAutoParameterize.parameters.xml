@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="MySql-Web.config Connection String" description="MySql Connection String used in web.config by the application to access the database." defaultValue="server=localhost;uid=root;database=personalwebsite" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="F:\\My\ Personal\ Website\\WebAPI\\WebAPI\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MySql']/@connectionString" />
-  </parameter>
-</parameters>
