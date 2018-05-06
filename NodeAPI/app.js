@@ -2,6 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 const uuidv4 = require('uuid/v4');
+const PORT = process.env.PORT || 5000
 
 var app = express();
 
@@ -45,4 +46,4 @@ app.post('/SkillsDelete',jsonParser,function(req,res){
     });
 });
 
-app.listen(3000);
+app.listen(5000);
