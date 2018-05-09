@@ -49,7 +49,47 @@
 			<div class="col-md-12 col-xs-12 subtitlefont">A full stack web developer</div>
 		</div>
 	</div>
-	<div ng-controller="SkillsController" id="skills" style="padding-top:50px;background-image: url('Images/backgroundimage16.jpg');background-size:inherit;">
+		<div ng-controller="SkillsController" id="skills" style="padding-top:50px;background-image: url('Images/backgroundimage16.jpg');background-size:inherit;">
+		<div class="container">
+			<div class="h3 text-center">Skills</div>
+			<div class="col-md-12 h4">Languages, Scripts &amp; Frameworks</div>
+			<div ng-repeat="skill in SkillsList" ng-if="skill.Type == 'Languages, Scripts & Frameworks' " class="col-md-6">
+				<div class="col-md-6">{{skill.Name}}</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" ng-style="Style(skill.Rating)">
+							{{skill.Rating}}/10
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="col-md-12 h4">Cloud Services</div>
+			<div ng-repeat="skill in SkillsList" ng-if="skill.Type == 'Cloud Services' " class="col-md-6">
+				<div class="col-md-6">{{skill.Name}}</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" ng-style="Style(skill.Rating)">
+							{{skill.Rating}}/10
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12 h4">Tools</div>
+			<div ng-repeat="skill in SkillsList" ng-if="skill.Type == 'Tools' " class="col-md-6">
+				<div class="col-md-6">{{skill.Name}}</div>
+				<div class="col-md-6">
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" ng-style="Style(skill.Rating)">
+							{{skill.Rating}}/10
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 		<div class="container">
 			<div class="h3 text-center">Skills</div>
 			<div class="col-md-12 h4">Languages, Scripts &amp; Frameworks</div>

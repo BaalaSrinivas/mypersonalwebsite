@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script src="Dependent Scripts/Angular/angular.js"></script>
+	    <script src="Dependent Scripts/Angular/controller.js"></script> 
+    </head>
+    <body ng-app="application" ng-controller="skillsinsertcontroller">
+        Skill Type : <input type="text" id="skillType" ng-model="skills.SkillType" /><br />
+        Skill Name : <input type="text" id="skillName" ng-model="skills.SkillName"/><br />
+        Image : <input type="text" id="skillImage" ng-model="skills.Image"/><br />
+        Enabled: <input type="radio" name="enabled" ng-model="skills.Enabled" value="true">Yes</input>
+                 <input type="radio" name="enabled" ng-model="skills.Enabled" value="false">No</input><br />
+        Rating: <input type="number" id="skillrating" ng-model="skills.Rating"/><br />
+
+        <input type="Button" value="Submit" ng-click="submitfun(skills)"/>
+    </body>
+</html>
