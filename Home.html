@@ -14,10 +14,10 @@
 	<link rel="stylesheet" href="Dependent Scripts/Bootstrap/bootstrap.min.css">
 	<script src="Dependent Scripts/Bootstrap/bootstrap.min.js"></script>
 	<!--Angular-->
- 	<script src="Dependent Scripts/Angular/angular.js"></script>
+	<script src="Dependent Scripts/Angular/angular.js"></script>
 	<script src="Dependent Scripts/Angular/controller.js"></script>
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lovers+Quarrel" rel="stylesheet">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Lovers+Quarrel" rel="stylesheet">
 
 </head>
 
@@ -26,10 +26,10 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-       				<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>                        
-      		</button>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#home">Baala Srinivas</a>
 			</div>
 			<div class="navbar-collapse collapse" id="myNavbar">
@@ -46,13 +46,12 @@
 
 		<div class="container text-center" style="padding-top: 5%">
 			<div class="col-md-12 welcometextfont">Hello World...</div>
-			<!-- <div class="col-md-4 col-xs-3"></div><img class="col-md-3 col-xs-6" src="images/baala.png"/><div class="col-md-4 col-xs-3"></div> -->
 			<div class="col-md-12 col-xs-12 namefont">I'm Baala Srinivas</div>
-			<img class="col-md-12 col-xs-12" src="Images/baala.png"/>
+			<img class="img-fluid" src="Images/baala.png"/>
 			<div class="col-md-12 col-xs-12 subtitlefont">A full stack web developer</div>
 		</div>
 	</div>
-		<div ng-controller="SkillsController" id="skills" style="padding-top:50px;background-image: url('Images/backgroundimage16.jpg');background-size:inherit;">
+	<div ng-controller="SkillsController" id="skills" style="padding-top:50px;background-image: url('Images/backgroundimage16.jpg');background-size:inherit;">
 		<div class="container">
 			<div class="h3 text-center">Skills</div>
 			<div class="col-md-12 h4">Languages, Scripts &amp; Frameworks</div>
@@ -66,7 +65,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 
 			<div class="col-md-12 h4">Cloud Services</div>
 			<div ng-repeat="skill in SkillsList" ng-if="skill.Type == 'Cloud Services' " class="col-md-6">
@@ -93,7 +92,7 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="row"></div>
 	<div id="experience" style="padding-top:50px;">
 		<div class="row gap">
@@ -133,7 +132,8 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Totally Integrated Automation is a configuration tool which is used to configure and control energy devices. It is also used to program the PLCs and automate the industrial equipment.</div>
+				<div class="col-md-9 text-justify gap">Totally Integrated Automation is a configuration tool which is used to configure
+					and control energy devices. It is also used to program the PLCs and automate the industrial equipment.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">C#</span>
@@ -146,7 +146,7 @@
 				<div class="col-md-9">Export automation reports and device information</div>
 				<div class="col-md-9">Managing the software build, release and deployment process</div>
 				<div class="col-md-9">Fixing bugs and maintaining the existing functionality</div>
-			</div>			
+			</div>
 		</div>
 
 		<!--StaticFix agent for C#-->
@@ -158,7 +158,10 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">StaticFix agent is a visual studio extension which parses static analysis tool results and resolves them automatically. It also has a voice interface system through which the user can send commands to the agent through natural language. There is a web service version of staticfix which provides same functionalities through web interface.</div>
+				<div class="col-md-9 text-justify gap">StaticFix agent is a visual studio extension which parses static analysis tool
+					results and resolves them automatically. It also has a voice interface system through which the user can send commands
+					to the agent through natural language. There is a web service version of staticfix which provides same functionalities
+					through web interface.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">C#</span>
@@ -169,7 +172,7 @@
 				<div class="col-md-9">Develop auto resolve solutions for the static analysis violations</div>
 				<div class="col-md-9">Provide analytics based the parsed input and provide possible solutions</div>
 				<div class="col-md-9">Manage the builds and deployment process</div>
-			</div>			
+			</div>
 		</div>
 
 		<!-- Proespectus pro -->
@@ -181,7 +184,9 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Prospectus Pro is a powerful content management application which stores and manages your content in a central online repository. The details of the documents can be updated, reviewed and published for the display on web and for printing.</div>
+				<div class="col-md-9 text-justify gap">Prospectus Pro is a powerful content management application which stores and manages
+					your content in a central online repository. The details of the documents can be updated, reviewed and published for
+					the display on web and for printing.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">ASP.NET</span>
@@ -196,10 +201,10 @@
 				<div class="col-md-9">Identifying areas for improvement in the application</div>
 				<div class="col-md-9">Managing the software build, release and deployment process</div>
 				<div class="col-md-9">Fixing bugs and maintaining the existing functionality</div>
-				<div class="col-md-9">Played a major role in maintenance and enhancement of the project</div>	 
-			</div>			
+				<div class="col-md-9">Played a major role in maintenance and enhancement of the project</div>
+			</div>
 		</div>
-		
+
 		<!--Diabetes Nxt-->
 		<div class="row gap">
 			<div class="col-md-1"></div>
@@ -209,7 +214,9 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Diabetic Nxt is a cloud based android application, which monitors the sugar and BP level of diabetic patients on a daily basis, and sends the report to the doctor periodically. Doctor can suggest medications for patients through Diabetes Nxt. Diabetic Nxt app ensures the health of diabetic patients</div>
+				<div class="col-md-9 text-justify gap">Diabetic Nxt is a cloud based android application, which monitors the sugar and
+					BP level of diabetic patients on a daily basis, and sends the report to the doctor periodically. Doctor can suggest
+					medications for patients through Diabetes Nxt. Diabetic Nxt app ensures the health of diabetic patients</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">Android</span>
@@ -222,10 +229,10 @@
 				<div class="col-md-9">Designing and developing android layouts</div>
 				<div class="col-md-9">Implementing cloud and API connectivity to the application</div>
 				<div class="col-md-9">Creating database and enabling connectivity through API using IBM Cloud Platform</div>
-			</div>			
+			</div>
 		</div>
-		
-		
+
+
 		<!--Task Tracker-->
 		<div class="row gap">
 			<div class="col-md-1"></div>
@@ -235,7 +242,10 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Task Tracker is a task management tool where employees logs their daily activities and the efforts spent on those activities. The managers and the supervisors gets notified about the activity completion status periodically. In addition, Task Tracker also generates effective reports in the form of charts and tables which will be helpful for the management in evaluating the performance of an individual.</div>
+				<div class="col-md-9 text-justify gap">Task Tracker is a task management tool where employees logs their daily activities
+					and the efforts spent on those activities. The managers and the supervisors gets notified about the activity completion
+					status periodically. In addition, Task Tracker also generates effective reports in the form of charts and tables which
+					will be helpful for the management in evaluating the performance of an individual.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">Angular JS</span>
@@ -248,9 +258,9 @@
 				<div class="col-md-9">Designing and developing webpages for the application </div>
 				<div class="col-md-9">Managing and maintaining the code in GIT repository </div>
 				<div class="col-md-9">Integrating data from back-end services and databases</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!--COD-->
 		<div class="row gap">
 			<div class="col-md-1"></div>
@@ -260,7 +270,9 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Cost of Delivery Tracker is an analytical tool which consolidates and summarizes delivery cost of the software products.COD Tracker performs predictive analysis and generates an estimated forecast report for the forthcoming quarters. All the reports can be extracted in the form of charts and excel sheets.</div>
+				<div class="col-md-9 text-justify gap">Cost of Delivery Tracker is an analytical tool which consolidates and summarizes
+					delivery cost of the software products.COD Tracker performs predictive analysis and generates an estimated forecast
+					report for the forthcoming quarters. All the reports can be extracted in the form of charts and excel sheets.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">PHP</span>
@@ -273,9 +285,9 @@
 				<div class="col-md-9">Collecting data and deriving information for the reports </div>
 				<div class="col-md-9">Designing and developing webpages for the application </div>
 				<div class="col-md-9">Managing and maintaining the code in GIT repository </div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!--Code Coverage-->
 		<div class="row gap">
 			<div class="col-md-1"></div>
@@ -285,7 +297,9 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Code coverage is a unit test coverage tool which analyzes the functionality of the code by executing the test cases. The tool makes use of the VSTest and MSTest extensions and generates coverage report out of it.</div>
+				<div class="col-md-9 text-justify gap">Code coverage is a unit test coverage tool which analyzes the functionality of
+					the code by executing the test cases. The tool makes use of the VSTest and MSTest extensions and generates coverage
+					report out of it.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">C#</span>
@@ -295,9 +309,9 @@
 				<div class="col-md-9">Planning and implementing the architecture and design</div>
 				<div class="col-md-9">Creating windows forms for the application</div>
 				<div class="col-md-9">Integrating VSTest and MSTest command line utilities</div>
-			</div>			
+			</div>
 		</div>
-		
+
 		<!--Prospectus Go V2-->
 		<div class="row gap">
 			<div class="col-md-1"></div>
@@ -307,7 +321,9 @@
 			</div>
 			<div class="col-md-8">
 				<strong class="col-md-12">Description</strong>
-				<div class="col-md-9 text-justify gap">Prospectus Go V2 is a next generation prospectus document template designer which creates documents for mutual funds, variable annuity, and retirement product providers, as well as broker/dealers and clearing firms with user defined templates.</div>
+				<div class="col-md-9 text-justify gap">Prospectus Go V2 is a next generation prospectus document template designer which
+					creates documents for mutual funds, variable annuity, and retirement product providers, as well as broker/dealers and
+					clearing firms with user defined templates.</div>
 				<strong class="col-md-12">Technologies</strong>
 				<div class="col-md-9 gap">
 					<span class="label label-default">ASP.NET MVC</span>
@@ -318,12 +334,13 @@
 				</div>
 				<strong class="col-md-12">Responsibilities</strong>
 				<div class="col-md-9">Played an important role in backend and frontend development </div>
-				<div class="col-md-9">Integrating code coverage tool with Prospectus Go V2 application and ensuring the stability of the code </div>
+				<div class="col-md-9">Integrating code coverage tool with Prospectus Go V2 application and ensuring the stability of
+					the code </div>
 				<div class="col-md-9">Contributed a major part for the preparation of test cases</div>
 				<div class="col-md-9">Creating and maintaining application documentation</div>
-			</div>			
+			</div>
 		</div>
-		
+
 	</div>
 	<div id="contact" style="height: 100%;padding-top:50px;background-image:url('Images/backgroundimage27.jpg');">
 		<div class="h2 text-center col-md-12">Get In Touch</div>
@@ -360,7 +377,7 @@
 						<div class="gap"></div>
 						<div class="row">
 							<div class="col-md-1"></div>
-							<a href="https://www.facebook.com/baala.srinivas.1"><img class="col-md-3 col-xs-4" src="Images/social icons/facebook.png"></a>
+							<a href="https://www.facebook.com/baala.srinivas.1"><img class="img-fluid" src="Images/social icons/facebook.png"></a>
 							<a href="https://plus.google.com/108571751072140896009"><img class="col-md-3 col-xs-4" src="Images/social icons/google.png"></a>
 							<a href="https://www.linkedin.com/in/baala-srinivas-k-9b3b04a2/"><img class="col-md-3 col-xs-4" src="Images/social icons/linkedin.png"></a>
 							<div class="col-md-1"></div>
@@ -390,14 +407,17 @@ $(document).ready(function(){
 			transform: rotateY(360deg);
 		}
 	}
+
 	.boxShadow {
-		box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+		box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
 	}
+
 	.number {
 		font-size: 32px;
 		color: black;
 		padding-bottom: 0px;
 	}
+
 	.progressBar {
 		position: relative;
 		height: 5px;
@@ -406,26 +426,49 @@ $(document).ready(function(){
 		width: 100%;
 		margin-top: 10px;
 	}
+
 	.gap {
 		padding-bottom: 15px;
 	}
+
 	#skills {
 		color: white;
 	}
-	.welcometextfont {
-		color: white;
-		font-family: 'Comfortaa', cursive;
-		font-size: 24px;
+
+	@media (max-width: 768px) {
+		.welcometextfont {
+			color: white;
+			font-family: 'Comfortaa', cursive;
+			font-size: 20px;
+		}
+		.namefont {
+			color: white;
+			font-family: 'Lovers Quarrel', cursive;
+			font-size: 54px;
+		}
+		.subtitlefont {
+			color: white;
+			font-family: 'Comfortaa', cursive;
+			font-size: 20px;
+		}
 	}
-	.namefont {
-		color: white;
-		font-family: 'Lovers Quarrel', cursive;
-		font-size: 72px;
-	}
-	.subtitlefont {
-		color: white;
-		font-family: 'Comfortaa', cursive;
-		font-size: 24px;
+
+	@media (min-width: 1200px) {
+		.welcometextfont {
+			color: white;
+			font-family: 'Comfortaa', cursive;
+			font-size: 24px;
+		}
+		.namefont {
+			color: white;
+			font-family: 'Lovers Quarrel', cursive;
+			font-size: 72px;
+		}
+		.subtitlefont {
+			color: white;
+			font-family: 'Comfortaa', cursive;
+			font-size: 24px;
+		}
 	}
 </style>
 
