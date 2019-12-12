@@ -1,0 +1,45 @@
+1) What happens if you mark a variable as private static readonly
+2) Assume B is base class and D1 and D2 are two derived classes, then D1 d1 = new D2();. Is this possible?
+3) What are filters in .NET Core?
+4) What is Azure lambda expression?
+5) Relation between delegates and lambda expression?
+6) Request cycle in .NET Core
+7) Can I create a private class if so when?
+8) Assume following code snippet
+ int i;
+ string s;
+ Console.WriteLine("{0} {1}",i,s);
+9) Difference between .NET Core API and .NET Framework
+10) Difference between heap and stack
+11) Design pattern for implementing undo and redo
+12) When a static object will be created in .NET Framework
+13) Difference between finally and finalize
+14) Can I use try block without catch block?
+15) Can I write extension function for enumeated types or lists?
+16) Difference between IEnumerable and IQueryable
+17) What is https? and what is the difference between http and https
+18) What is TSL,SSL and key exchange
+19) Difference between Oauth and Oauth 2.0
+20) What is the actual use of refreshtoken?
+21) Difference between readonly and constant
+22) What is appsettings and global.asax in ASP.NET
+23) Can we have nested class in c#?
+24) Difference between protected and protected internal
+25) Can we dispose a static object, how to implement dispose in static class
+26) What is the logic behind boxing and unboxing?
+27) How to I exclude a public method in web api from being exposed outside for ajax call
+28) Logic behind async and await
+29) How thread safety is handled in static class
+30) Difference between clone and copy
+31) What is Lazy<T>
+32) How can we improve the performance of an application/query?
+33) What is mutable and immutable
+34) What is the use of yield keyword?
+35) What is deferred execution?
+36) What is memory leakage?
+37) Difference between assembly and namespace
+38) Relation between object and datatypes like (int,float,char)
+39) How delegates and events are related?
+40) Difference between property and field?
+41) What happens if we pass ref with ref keyword
+42) What is the difference between ref and out parameter? 
