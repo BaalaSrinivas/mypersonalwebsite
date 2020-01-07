@@ -59,3 +59,24 @@ Add application vs add website in IIS
 Learn indepth abount event handler
 What is OpenID Connect?
 What is API Gateway?
+
+Terms to Learn
+Transactions Messaging security 
+Reliable Message Security
+Windows Activation Service
+Duplex Service Operations
+SOAP
+SOA
+SOAP vs REST
+WCF vs Rest API
+CQRS Pattern
+aspnet_isapi.dll
+App domain/App pool
+Cherry picking git, rebase
+Mutex
+STA and MTA
+Process vs thread
+Process has seperate memory and thread is in shared memory
+How thread works internally
+Learn deep about each file in .net core app
+
